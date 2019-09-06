@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arryStar =[ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair"," Dubhe", "Regulus"];
+    let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let txt=prompt("Enter a star of you: ");
+    let x=search(txt);
+    function search(tim) {
+        let ss =true;
+        for( let i= 0;i <arryStar.length;i++ ){
+            if(tim === arryStar[i]){
+                document.write(constellation[i])
+                ss= false;
+                break;
+            }
+        }
+        if(ss){
+            document.write("There are not stars like this!")
+        }
+
+    }
+</script>
+</body>
+</html>

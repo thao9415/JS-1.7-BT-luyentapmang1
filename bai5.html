@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = prompt("Nhập vào tên ngôi sao của bạn ^ ^ ");
+
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    //kiem tra star co trong mang 1 hay ko?
+    function hihi() {
+        for (i = 0; i < array1.length; i++) {
+            if (star == array1[i]);
+            {
+                return ("Tìm thấy ngôi sao"+ array1[i])
+            } else alert("Không có dữ liệu cần tìm")
+        }
+    }
+    alert(hihi(star));
+
+
+</script>
+
+</body>
+</html>
